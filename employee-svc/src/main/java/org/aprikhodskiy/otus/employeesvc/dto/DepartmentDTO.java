@@ -1,7 +1,12 @@
 package org.aprikhodskiy.otus.employeesvc.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 
+@NoArgsConstructor
+@AllArgsConstructor
 public class DepartmentDTO implements Serializable {
     private long id;
     private String name;
@@ -21,6 +26,4 @@ public class DepartmentDTO implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-
-
 }
